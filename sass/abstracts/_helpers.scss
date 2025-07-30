@@ -41,3 +41,29 @@ $cor-bg-disclaimer: #e1e1e1;
   font-weight: 700;
   line-height: 1.2;
 }
+
+%botao {
+  border-radius: 5rem;
+  padding: 1rem 2.5rem;
+  cursor: pointer;
+  border: solid 2px $cor-preta;
+  border-right-width: 4px;
+  border-bottom-width: 4px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.92rem;
+
+  &:hover {
+    border-width: 3px;
+  }
+}
+
+%botao--amarelo {
+  background-color: $cor-amarelo;
+  border-color: $cor-amarelo-dourado;
+  color: $cor-branca;
+}
+
+%botao--cetralizado {
+  align-self: center;
+}

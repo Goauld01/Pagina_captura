@@ -1,0 +1,93 @@
+// -----------------------------------------------------------------------------
+// Este arquivo é referente a todos os estilos do compemente popup.
+// -----------------------------------------------------------------------------
+
+@use "../abstracts/" as *;
+//
+
+.popup--aberto {
+  & .popup {
+    display: flex;
+  }
+}
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba($cor-branca, 0.827);
+  backdrop-filter: blur(10px);
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+
+  &__container {
+    @include flex($direction: column, $gap: 2.5rem);
+    position: relative;
+    width: 50rem;
+    background-color: $cor-branca;
+    border-radius: 2.5rem;
+    box-shadow: inset 0 0 0.8rem 0.2rem rgba($cor-borda, 0.2);
+    padding: 3.12rem;
+  }
+
+  &__inputs {
+    @include flex($direction: column, $gap: 0.82rem);
+  }
+
+  &__input {
+    padding: 0.82rem 1.28rem;
+    border: solid 2px $cor-preta;
+    border-radius: 5rem;
+    font-size: inherit;
+    &:focus-visible {
+      outline: none;
+      box-shadow: 0 0 1rem rgba($cor-amarelo, 0.827);
+    }
+
+    &--amarelo {
+      border-color: $cor-amarelo;
+    }
+  }
+
+  &__botao {
+    @extend %botao;
+
+    &--amarelo {
+      @extend %botao--amarelo;
+    }
+    &:focus-visible {
+      outline: none;
+      box-shadow: 0 0 1rem rgba($cor-amarelo, 0.827);
+    }
+  }
+
+  &__fechar {
+    @include flex($justify: center);
+
+    cursor: pointer;
+    position: absolute;
+    top: 0rem;
+    right: 0rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    color: $cor-branca;
+    border: 2px solid $cor-preta;
+    background-color: $cor-branca;
+    font-weight: 700;
+    font-size: 1.92rem;
+    transform: translate(30%, -30%);
+
+    &:hover {
+      border-width: 1px;
+    }
+    &--amarelo {
+      color: $cor-branca;
+      border: 2px solid $cor-amarelo-dourado;
+      background-color: $cor-amarelo;
+    }
+  }
+}

@@ -1,31 +1,17 @@
+// -----------------------------------------------------------------------------
+// Este arquivo contém as especificações de boTões
+// -----------------------------------------------------------------------------
 @use "../abstracts/index" as *;
-
-// -----------------------------------------------------------------------------
-// Este arquivo contém as especificações de boões
-// -----------------------------------------------------------------------------
+//
 
 .botao {
-  border-radius: 5rem;
-  padding: 1rem 2.5rem;
-  cursor: pointer;
-  border: solid 2px $cor-preta;
-  border-right-width: 4px;
-  border-bottom-width: 4px;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 1.92rem;
-
-  &:hover {
-    border-width: 3px;
-  }
+  @extend %botao;
 
   &--amarelo {
-    background-color: $cor-amarelo;
-    border-color: $cor-amarelo-dourado;
-    color: $cor-branca;
+    @extend %botao--amarelo;
   }
 
   &--cetralizado {
-    align-self: center;
+    @extend %botao--cetralizado;
   }
 }
