@@ -1,0 +1,18 @@
+@use "../abstracts";
+
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+/**
+ * Set up a decent box model on the root element
+ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}

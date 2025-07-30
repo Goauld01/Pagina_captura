@@ -1,0 +1,21 @@
+/**
+ * Set up a decent box model on the root element
+ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Monserrat", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  color: #1a1b1f;
+}
+
+/*# sourceMappingURL=style.css.map */
