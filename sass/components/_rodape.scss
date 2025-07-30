@@ -1,0 +1,28 @@
+// -----------------------------------------------------------------------------
+// Este arquivo é referente a todos os estilos do compemente rodapé.
+// -----------------------------------------------------------------------------
+
+@use "../abstracts/" as *;
+//
+.rodape {
+  padding: 4.88rem 2rem;
+
+  &__logo {
+    width: 3.7rem;
+    height: 3.7rem;
+  }
+
+  &__texto {
+    @include flex($gap: 0.8rem);
+  }
+}
+.container--rodape {
+  justify-content: end;
+  align-items: center;
+  gap: 0.8rem;
+
+  & a {
+    text-decoration: none;
+    color: inherit;
+  }
+}

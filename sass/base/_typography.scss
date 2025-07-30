@@ -25,3 +25,12 @@ strong {
     font-weight: 600;
   }
 }
+
+.subtitulo {
+  @extend %subtitulo;
+
+  & span {
+    color: $cor-amarelo;
+    font-weight: 600;
+  }
+}
