@@ -20,10 +20,24 @@
   }
 }
 
-.container--hero {
-  position: relative;
-  align-items: end;
-  width: 100%;
+.container {
+  &--hero {
+    position: relative;
+    align-items: end;
+    width: 100%;
+  }
+
+  &--passo {
+    @include flex($direction: column, $gap: 6rem);
+  }
+}
+
+.grid {
+  &--passo {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 6rem;
+    column-gap: 3rem;
+  }
 }
 
 .div-lira {
@@ -35,8 +49,16 @@
   bottom: 0;
 }
 
-// Disclaimer
-
 .disclaimer__paragrafo {
   font-size: 1.33rem;
+}
+
+.img-lira {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  align-self: center;
+}
+
+.passos-cabecalho {
+  @include flex($align: center, $gap: 2.6rem);
 }
