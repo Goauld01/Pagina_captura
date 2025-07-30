@@ -1,0 +1,31 @@
+// -----------------------------------------------------------------------------
+// Este arquivo contém variavei, funções, mixin e includes
+// -----------------------------------------------------------------------------
+
+// Variáveis
+$cor-preta: #1a1b1f;
+$cor-cinza-escuro: #4b4d4d;
+$cor-cinza-claro: #f1f1f1;
+$cor-branca: #fff;
+$cor-amarelo: #ffd24a;
+$cor-amarelo-dourado: #7d5e00;
+$cor-amarelo-escuro: #eebe2a;
+$cor-azul: #256783;
+$cor-azul-escuro: #1c415c;
+$cor-borda: black;
+$cor-bg-disclaimer: #e1e1e1;
+
+// Mixins
+@mixin flex(
+  $direction: row,
+  $wrap: nowrap,
+  $align: stretch,
+  $justify: start,
+  $gap: 0
+) {
+  display: flex;
+  flex-flow: $direction $wrap;
+  align-items: $align;
+  justify-content: $justify;
+  gap: $gap;
+}

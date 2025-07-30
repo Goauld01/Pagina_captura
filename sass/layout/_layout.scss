@@ -1,0 +1,16 @@
+@use "../abstracts/" as *;
+// -----------------------------------------------------------------------------
+// Este arquivo esta relacionado aos layouts
+// -----------------------------------------------------------------------------
+
+.secao {
+  display: flex;
+  flex-flow: column;
+  padding: 6.1rem 2rem;
+}
+
+.container {
+  display: flex;
+  max-width: 100rem;
+  margin: auto;
+}

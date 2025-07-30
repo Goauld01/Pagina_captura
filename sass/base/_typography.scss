@@ -1,4 +1,4 @@
-@use "../abstracts/index" as *;
+@use "../abstracts/" as *;
 
 //**
 // Basic typography style for copy text
@@ -9,4 +9,9 @@ body {
   font-size: 1.6rem;
   line-height: 1.4;
   color: $cor-preta;
+}
+
+b,
+strong {
+  font-weight: 600;
 }
