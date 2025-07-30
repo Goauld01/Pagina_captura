@@ -23,6 +23,7 @@ html {
 
 img {
   max-width: 100%;
+  display: block;
 }
 
 body {
@@ -72,13 +73,16 @@ strong {
   font-weight: 700;
   font-size: 1.92rem;
 }
+.botao:hover {
+  border-width: 3px;
+}
 .botao--amarelo {
   background-color: #ffd24a;
   border-color: #7d5e00;
   color: #fff;
 }
-.botao:hover {
-  border-width: 3px;
+.botao--cetralizado {
+  align-self: center;
 }
 
 .caixa {
@@ -194,10 +198,10 @@ strong {
   align-items: end;
   width: 100%;
 }
-.container--passo {
+.container--passo, .container--aprender {
   display: flex;
   flex-flow: column nowrap;
-  align-items: stretch;
+  align-items: start;
   justify-content: start;
   gap: 6rem;
 }
@@ -206,6 +210,10 @@ strong {
   grid-template-columns: repeat(3, 1fr);
   row-gap: 6rem;
   column-gap: 3rem;
+}
+.grid--aprender {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
 }
 
 .div-lira {
@@ -227,12 +235,20 @@ strong {
   align-self: center;
 }
 
-.passos-cabecalho {
+.cabecalho-titulo {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
   justify-content: start;
   gap: 2.6rem;
+}
+
+.aprender-img {
+  border-radius: 2rem;
+  transition: transform ease 0.2s;
+}
+.aprender-img:hover {
+  transform: scale(1.05);
 }
 
 /*# sourceMappingURL=style.css.map */
