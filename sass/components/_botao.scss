@@ -14,4 +14,7 @@
   &--cetralizado {
     @extend %botao--cetralizado;
   }
+  &--texto-pequeno {
+    @extend %botao--texto-pequeno;
+  }
 }

@@ -24,6 +24,12 @@ strong {
     color: $cor-azul;
     font-weight: 600;
   }
+
+  &--pequeno {
+    @include respond(tiny) {
+      font-size: 2.76rem;
+    }
+  }
 }
 
 .subtitulo {
@@ -32,5 +38,9 @@ strong {
   & span {
     color: $cor-amarelo;
     font-weight: 600;
+  }
+
+  &--pequeno {
+    @extend %subtitulo--pequeno;
   }
 }

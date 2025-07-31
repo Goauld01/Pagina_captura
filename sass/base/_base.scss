@@ -1,9 +1,7 @@
-@use "../abstracts";
-
 // -----------------------------------------------------------------------------
 // This file contains very basic styles.
 // -----------------------------------------------------------------------------
-
+@use "../abstracts" as *;
 /**
  * Set up a decent box model on the root element
  */
@@ -15,9 +13,18 @@
 
 html {
   font-size: 62.5%;
+  // 970px
+  @include respond(big) {
+    font-size: 56.25%;
+  }
+  // 866
+  @include respond(medium) {
+    font-size: 50%;
+  }
 }
 
 img {
   max-width: 100%;
+  width: 100%;
   display: block;
 }
